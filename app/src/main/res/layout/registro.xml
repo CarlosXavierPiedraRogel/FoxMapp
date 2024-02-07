@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Layout principal que utiliza un LinearLayout vertical -->
+<android.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true"
+    android:orientation="vertical">
+
+    <!-- ImageView para la imagen de perfil -->
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="160dp"
+        android:layout_height="174dp"
+        android:src="@drawable/account_circle" />
+
+    <!-- TextView para la etiqueta "Nombre" -->
+    <Button
+        android:id="@+id/button_agregar_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView2"
+        android:layout_toEndOf="@+id/imageView2"
+        android:text="Agregar Imagen" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nombre"
+        android:textSize="24sp" />
+
+    <!-- EditText para la entrada del nombre -->
+    <EditText
+        android:id="@+id/txt_nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text" />
+
+    <!-- TextView para la etiqueta "Numero" -->
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Numero"
+        android:textSize="24sp" />
+
+    <!-- EditText para la entrada del número de teléfono -->
+    <EditText
+        android:id="@+id/txt_numero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="phone" />
+
+    <!-- TextView para la etiqueta "Direccion" -->
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Direccion"
+        android:textSize="24sp" />
+
+    <!-- EditText para la entrada de la dirección -->
+    <EditText
+        android:id="@+id/txt_direccion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text" />
+
+    <!-- Botón para agregar ubicación -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnubicacion"
+            android:layout_width="74dp"
+            android:layout_height="82dp"
+            android:layout_gravity="center_horizontal"
+            app:icon="@drawable/baseline_place_24"
+            app:iconGravity="textTop"
+            app:iconPadding="60dp"
+            app:iconSize="60dp"
+            app:iconTint="#D10F0F" />
+
+        <TextView
+            android:id="@+id/txt_latitud"
+            android:layout_width="169dp"
+            android:layout_height="44dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="0.0" />
+
+        <TextView
+            android:id="@+id/txt_longitud"
+            android:layout_width="169dp"
+            android:layout_height="43dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="0.0" />
+    </LinearLayout>
+
+    <!-- Botón para agregar información -->
+
+    <Button
+        android:id="@+id/btn_agregar"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="AGREGAR" />
+
+</android.widget.LinearLayout>
